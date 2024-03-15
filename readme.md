@@ -16,7 +16,7 @@
 
 ### Objective
 
-Turn this Figma mockup into a web page: [Figma Mockup Link](https://www.figma.com/file/BnXpFp9BVHIxVRAiNDMy9I/html.to.design-(Community)?type=design&node-id=0%3A1&mode=dev)
+Turn this Figma mockup into a web page: [Figma Mockup Link](https://www.figma.com/file/C66TNPatZDL3PYogZ80BvX/Recode-the-Past?type=design&node-id=0%3A1&mode=dev&t=a4xCcsVlcLTqBKM0-1)
 
 ### Prerequisites
 
