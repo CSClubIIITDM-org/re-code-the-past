@@ -1,0 +1,73 @@
+.section1 {
+    background-color: lightblue; /* Example background color for section 1 */
+    padding: 1rem;
+  }
+  
+  .section2 {
+    background-color: lightgreen; /* Example background color for section 2 */
+    padding: 1rem;
+  }
+  
+  .footer {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .privacy {
+    margin-bottom: 1rem;
+    flex: 1; /* Expand privacy section to fill available space */
+    border-right: 1px dotted gray ; /* Add a vertical border */
+    padding: 1rem; 
+    
+    /* Add some space between privacy links and content */
+  }
+  .privacy ul p{
+    color: white;
+  }
+  
+  .content {
+    text-align: left;
+    padding-left: 1rem; /* Add padding on the left */
+    padding-right: 1rem;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-bottom: 1rem; /* Add padding on the right */
+    color: white;
+    padding-right: 10px;
+  }
+  
+  .uses {
+    text-align: left;
+    color: gray;
+    padding-right: 10px;
+  }
+  
+  .ack {
+    text-align: left;
+    padding-right: 10px;
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+    .footer {
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .privacy {
+      width: auto; 
+    }
+  
+    .content {
+      max-width: 60%; 
+      margin-bottom: 0;
+    }
+  
+    .ack {
+      margin-top: 0;
+    }
+  }
