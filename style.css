@@ -446,122 +446,6 @@ body {
 /* Your existing CSS here... */
 
 /* Media queries for mobile */
-@media only screen and (max-width: 767px) {
-    /* Adjustments for smaller screens */
-    #nav-bar-container {
-        padding: 5px 2%;
-    }
-
-    #nav-bar-cn-logo {
-        margin-right: 10px;
-    }
-
-    ._nav-bar-button-text {
-        font-size: 16px;
-        padding: 0px 10px;
-        line-height: 56px; /* Adjust as needed */
-    }
-
-    ._nav-bar-desktop-items {
-        display: none;
-    }
-
-    #nav-bar-icon-searchBox {
-        width: 70%;
-    }
-
-    #nav-bar-icon-search-icon {
-        right: 5%;
-    }
-
-    #cssportal-grid1,
-    #cssportal-grid2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-    }
-
-    .imgg,
-    .imagg {
-        width: 100%;
-    }
-
-    .bottom-div {
-        height: auto;
-    }
-
-    .play-btn {
-        font-size: 1.5rem;
-    }
-
-    .hero1,
-    .hero2 {
-        height: auto;
-    }
-
-    .rbtn {
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 20px;
-    }
-
-    .hero2-hed {
-        padding-left: 10px;
-    }
-
-    .gamelogo {
-        margin-left: 20px;
-    }
-
-    .footer-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #footer-navigation {
-        margin-bottom: 20px;
-    }
-}
-
-/* Media queries for tablets */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Adjustments for tablets */
-
-    /* Example tablet styles */
-    #nav-bar-container {
-        padding: 10px 5%;
-    }
-
-    ._nav-bar-button-text {
-        font-size: 18px;
-        padding: 0px 15px;
-        line-height: 64px; /* Adjust as needed */
-    }
-
-    #nav-bar-icon-searchBox {
-        width: 80%;
-    }
-
-    #nav-bar-icon-search-icon {
-        right: 3%;
-    }
-
-    #cssportal-grid1,
-    #cssportal-grid2 {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .imagg,
-    .imgg {
-        width: 90%;
-    }
-
-    .rbtn {
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 30px;
-    }
-}
 .hero2-btn{
 
 	background-color: #FFB2CD;
@@ -571,3 +455,30 @@ body {
 	background-color: #000;
 	color: white;
 }
+@media only screen and (max-width: 767px) {
+	/* Existing styles for smaller screens */
+  
+	/* Hamburger menu button */
+	.hamburger-menu-btn {
+	  display: block;
+	  float: left; /* Or use flexbox for better positioning */
+	  /* Style the button (lines, color, etc.) */
+	}
+  
+	/* Hide navigation elements by default */
+	#nav-bar-container ._nav-bar-buttons,
+	#nav-bar-container ._nav-bar-dividers,
+	#nav-bar-container ._nav-bar-desktop-items {
+	  display: none;
+	}
+  
+	/* Show navigation elements when hamburger menu is clicked (using Javascript) */
+	#nav-bar-container .navigation-links {
+	  display: none; /* Initially hidden */
+	}
+  
+	#nav-bar-container .hamburger-menu-btn:clicked {
+	  /* Javascript to toggle visibility of .navigation-links */
+	}
+  }
+  
